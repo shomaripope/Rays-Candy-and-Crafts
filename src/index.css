@@ -1,13 +1,330 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  
+}
+ 
+
+/* Header Section */
+  .header {
+    background-color: #FF3EC9;
+    grid-area: header;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    padding: 3em;
+  }
+
+  .header ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    list-style-type: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header ul li a {
+        color: white;
+        text-shadow: 2px 2px 4px black;
+        font-weight: bold;
+        font-size: 2.5em; 
+        text-decoration: none;   
+}
+
+.logo {
+    padding-left: 4em;
+}
+
+
+
+
+/* Hero Section */
+.hero {
+  background-color: white;
+  grid-area: hero;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 5em;
+  margin-right: 5em;
+  justify-content: center;
+  }
+  
+  .hero .welcome h2 {
+      color: #FF3EC9;
+      font-size: 6em;
+      margin-top: 1em;
+      margin-bottom: .5em;
+      text-shadow: 2px 2px 4px black;
+  }
+  
+  .hero .btn {
+     background-color: #FF3EC9;
+     color: white;
+     font-size: 2em;
+     border-radius: 50px;
+     padding: .4em;
+     margin-left: 10em;
+  }
+  
+  .hero .heroimage {
+      overflow: none;
+      margin-top: 5em;
+  }
+  
+  .hero .welcome p {
+      color: #FF3EC9;
+      font-size: 2em;
+      display: grid;
+      margin-bottom: 1em;
+      align-content: center;
+      align-items: center;
+      font-weight: bold;
+  }
+
+
+
+
+/* Review Section */
+.reviews-banner {
+  background-color: #FF3EC9;
+  grid-area: reviews-banner;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 1.5em;
+  padding: 1em;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  }
+
+.reviews {
+  background-color: #FF3EC9;
+  grid-area: reviews;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  @media (max-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    }
+  }
+  
+  .review {
+      background-color: white;
+      margin: 1em;
+      padding: 1.5em;
+      border-radius: 50px;
+      color: #FF3EC9;
+      font-size: 1.5em;
+      
+  }
+  
+  .profile-img img {
+      border-radius: 50%;
+      box-shadow: 2px 2px 20px grey;
+  }
+  
+  .review h2 {
+      text-shadow: 2px 2px 1px grey;
+  }
+  
+  .review p {
+      font-size: 1em;
+      font-weight: bold;
+  }
+  
+  .review .btn {
+      background-color: #FF3EC9;
+      color: white;
+      font-size: 1em;
+      border-radius: 50em;
+      margin-top: 1em;
+      padding: .19em;
+   }
+
+
+
+
+   /* Featured Candy Section */
+   .featured-candy-banner {
+  grid-area: reviews-banner;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  text-align: center;
+  font-size: 2em;
+  margin-top: .5em;
+  padding: 1em;
+  color: #FF3EC9;
+  text-shadow: 2px 2px 4px black;
+ }
+
+   .featured-candy {
+    grid-area: featured-candy;
+    display: grid;
+    gap: 1em;
+    margin: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    color:#FF3EC9;
+    justify-items: center;
+    text-align: center;
+    @media (max-width: 1200px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      }
+}
+
+.candy img {
+    border-radius: 50px;
+    margin-bottom: .5em;
+}
+
+.candy {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1em;
+}
+
+.candy p {
+  font-size: 1.5em;
+}
+
+.featured-candy .btn {
+    background-color: #FF3EC9;
+    color: white;
+    font-size: 1em;
+    border-radius: 50px;
+    margin-top: 1em;
+    padding: .5em;
+}
+
+span {
+  font-size: 1.5em;
+  margin-top: .5em;
+}
+
+
+
+
+/* Featured Crafts Section */
+.featured-crafts-banner {
+  grid-area: reviews-banner;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  text-align: center;
+  font-size: 2em;
+  margin-top: .5em;
+  padding: 1em;
+  color: #FF3EC9;
+  text-shadow: 2px 2px 4px black;
+ }
+
+   .featured-crafts {
+    grid-area: featured-crafts;
+    display: grid;
+    gap: 1em;
+    margin: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    color:#FF3EC9;
+    justify-items: center;
+    text-align: center;
+    @media (max-width: 1200px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      }
+}
+
+.crafts img {
+    border-radius: 50px;
+    margin-bottom: .5em;
+}
+
+.crafts {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1em;
+}
+
+.crafts p {
+  font-size: 1.5em;
+}
+
+.featured-crafts .btn {
+    background-color: #FF3EC9;
+    color: white;
+    font-size: 1em;
+    border-radius: 50px;
+    margin-top: 1em;
+    padding: .5em;
+}
+
+span {
+  font-size: 1.5em;
+  margin-top: .5em;
+}
+
+/* Footer Section */
+footer {
+  background-color: #FF3EC9;
+  grid-area: header;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  display: grid;
+  grid-template-columns: .5fr 2fr;
+  padding: 2em;
+  margin-top: 5em;
+}
+
+footer ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  list-style-type: none;
+}
+
+footer ul li a {
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-weight: bold;
+  font-size: 2.5em; 
+  text-decoration: none;   
+}
+
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .header a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .header a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .header {position: relative;}
+  .header a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header {float: none;}
+  .header {position: relative;}
+  .header {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }
