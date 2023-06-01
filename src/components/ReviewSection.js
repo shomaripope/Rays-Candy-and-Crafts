@@ -15,7 +15,7 @@ export default function
 
             <div class="review">
             <div class="profile-img">
-                <img src={reviewPic} alt="review image" />
+                <img src={reviewPic} alt="review image 1" />
             </div>
             <h2 class="name">Amy Stevenson</h2>
             <p class="description"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, esse?</p>
@@ -24,7 +24,7 @@ export default function
 
             <div class="review">
             <div class="profile-img">
-            <img src={reviewPic} alt="review image" />
+            <img src={reviewPic} alt="review image 2" />
             </div>
             <h2 class="name">Amy Stevenson</h2>
             <p class="description"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, esse?</p>
@@ -33,7 +33,7 @@ export default function
 
             <div class="review">
             <div class="profile-img">
-                <img src={reviewPic} alt="review image" />
+                <img src={reviewPic} alt="review image 3" />
             </div>
             <h2 class="name">Amy Stevenson</h2>
             <p class="description"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, esse?</p>
@@ -42,7 +42,7 @@ export default function
 
             <div class="review">
             <div class="profile-img">
-                <img src={reviewPic} alt="review image" />
+                <img src={reviewPic} alt="review image 4" />
             </div>
             <h2 class="name">Amy Stevenson</h2>
             <p class="description"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, esse?</p>

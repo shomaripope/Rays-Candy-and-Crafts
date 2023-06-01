@@ -25,7 +25,7 @@ function App() {
           <Route path="/crafts" element= {<CraftsPage />} />
           <Route path="/about" element= {<AboutPage />} />
           <Route path="/contact" element= {<ContactPage />} />
-          <Route path="*" element= {<ContactPage />} />
+          <Route path="*" element= {<NoPage />} />
         </Routes>
       </BrowserRouter>
       {/* <Header />

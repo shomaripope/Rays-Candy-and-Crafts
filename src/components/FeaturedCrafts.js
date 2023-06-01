@@ -15,7 +15,7 @@ export default function
 
         <div className="crafts">
                 <div className="craft-img">
-                <img src={craftProduct} />
+                <img src={craftProduct} alt="craft image 1" />
                 </div>
                     <h2 className="product-title">Oil Painting
                     </h2>
@@ -28,7 +28,7 @@ export default function
 
             <div className="crafts">
                 <div className="craft-img">
-                <img src={craftProduct} />
+                <img src={craftProduct} alt="craft image 2" />
                 </div>
                     <h2 className="product-title">Oil Painting
                     </h2>
@@ -40,7 +40,7 @@ export default function
 
             <div className="crafts">
                 <div className="craft-img">
-                <img src={craftProduct} />
+                <img src={craftProduct} alt="craft image 3" />
                 </div>
                     <h2 className="product-title">Oil Painting
                     </h2>
@@ -52,7 +52,7 @@ export default function
 
             <div className="crafts">
                 <div className="craft-img">
-                <img src={craftProduct} />
+                <img src={craftProduct} alt="craft image 4" />
                 </div>
                     <h2 className="product-title">Oil Painting
                     </h2>
