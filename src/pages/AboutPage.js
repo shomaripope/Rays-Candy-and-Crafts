@@ -12,8 +12,6 @@ export default function AboutPage() {
         <Header />
         <Hero />
         <ReviewSection />
-        <FeatuedCandy />
-        <FeaturedCrafts />
         <Footer />
     </div>
   )
