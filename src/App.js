@@ -5,13 +5,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import FeatuedCandy from './components/FeatuedCandy';
 // import FeaturedCrafts from './components/FeaturedCrafts';
 // import Footer from './components/Footer';
+// import 'materialize-css/dist/css/materialize.min.css';
 
-import HomePage from './pages/HomePage'
-import CandyPage from './pages/CandyPage'
-import CraftsPage from './pages/CraftsPage'
-import AboutPage from './pages/AboutPage'
-import ContactPage from './pages/ContactPage'
-import NoPage from './pages/NoPage'
+import HomePage from './pages/HomePage';
+import CandyPage from './pages/CandyPage';
+import CraftsPage from './pages/CraftsPage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import NoPage from './pages/NoPage';
 
 
 function App() {

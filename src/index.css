@@ -54,10 +54,11 @@
       }
 }
 
-.cart {
+.material-icons {
   color: white;
   margin-right: 3em;
-  transform: scale(1.5);
+  transform: scale(1.8);
+  text-shadow: 2px 2px 2px black;
   @media (max-width: 1200px) {
     margin: 0;
     padding: 0;
