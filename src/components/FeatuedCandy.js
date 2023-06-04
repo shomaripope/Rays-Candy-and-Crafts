@@ -2,8 +2,7 @@ import React from 'react'
 import candyProduct from '../images/sarah-takforyan-qRaNRi69t14-unsplash175px.png';
 import { Link } from 'react-router-dom';
 
-export default function 
-() {
+export default function FeatuedCandy() {
   return (
     <div>
 

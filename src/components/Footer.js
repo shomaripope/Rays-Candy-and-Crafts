@@ -2,8 +2,7 @@ import React from 'react'
 import raysLogo from '../images/rayslogo250px.png';
 import { Link } from 'react-router-dom';
 
-export default function 
-() {
+export default function Footer() {
   return (
     <div>
         <footer>

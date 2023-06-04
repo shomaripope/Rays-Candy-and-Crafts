@@ -5,6 +5,7 @@
   
 }
 
+
 body {
   @media (max-width: 1200px) {
     display: grid;
@@ -132,6 +133,46 @@ body {
       font-weight: bold;
   }
 
+  /* About Section */
+  .about {
+    background-color: white;
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 5em;
+    margin-right: 5em;
+    justify-content: center;
+    @media (max-width: 1200px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      }
+    }
+    
+    .about .about-welcome h2 {
+        color: #FF3EC9;
+        font-size: 6em;
+        margin-top: .5em;
+        margin-bottom: .5em;
+        text-shadow: 2px 2px 4px black;
+    }
+    
+    
+    .about .heroimage {
+        overflow: none;
+        margin-top: 7em;
+        @media (max-width: 1200px) {
+          margin: 0;
+          }
+    }
+    
+    .about .about-welcome p {
+        color: #FF3EC9;
+        font-size: 2em;
+        display: grid;
+        margin-bottom: 1em;
+        align-content: center;
+        font-weight: bold;
+    }
 
 
 
@@ -373,9 +414,6 @@ footer ul li a {
 
 
 /* Hamburger  Menu*/
-
-
-
 @media (max-width: 1200px) {
   a {
     color: #FF3EC9;

@@ -1,8 +1,7 @@
 import React from 'react'
 import reviewPic from '../images/alex-starnes-WYE2UhXsU1Y-unsplash Small200px.png';
 
-export default function 
-() {
+export default function ReviewSection() {
   return (
     <div>
 

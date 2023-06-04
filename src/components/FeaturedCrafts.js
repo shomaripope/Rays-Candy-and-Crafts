@@ -2,8 +2,7 @@ import React from 'react'
 import craftProduct from '../images/meg-wagener-vuXTB1lR3AY-unsplash150px.png';
 import { Link } from 'react-router-dom';
 
-export default function 
-() {
+export default function FeaturedCrafts() {
   return (
     <div>
 

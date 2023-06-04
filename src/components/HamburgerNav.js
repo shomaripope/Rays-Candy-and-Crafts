@@ -18,7 +18,7 @@ export default function HamburgerNav() {
         <ul>
           <li><Link to="/candy" className="link1">Candy</Link></li>
           <li><Link to="/crafts" className="link1">Crafts</Link></li>
-          <li><Link to="/about" className="link1">About</Link></li>
+          <li><Link to="/about" className="link1">About Us</Link></li>
           <li><Link to="/contact" className="link1">Contact</Link></li>
           <ShoppingCartIcon />
         </ul>
