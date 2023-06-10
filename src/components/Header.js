@@ -1,7 +1,7 @@
 import React from 'react'
 import raysLogo from '../images/rayslogo250px.png';
 import { Link } from 'react-router-dom';
-import ShoppingCartIcon from './ShoppingCartIcon';
+import ShoppingCartIcon from './ShoppingCart';
 import HamburgerNav from './HamburgerNav';
 
 
