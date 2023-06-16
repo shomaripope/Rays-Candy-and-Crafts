@@ -12,7 +12,7 @@ export default function CandyShop() {
     }, []);
 
     const fetchCandy = () => {
-        fetch('https://fakestoreapi.com/products')
+        fetch('https://fakestoreapi.com/products?limit=18')
             .then(res=>res.json())
             .then(data=>setCandy(data))
             .catch(err => console.log(err))

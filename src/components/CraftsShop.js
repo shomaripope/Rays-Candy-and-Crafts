@@ -1,7 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import Craft from './Craft';
-import craftProduct from '../images/meg-wagener-vuXTB1lR3AY-unsplash150px.png';
-import { Link } from 'react-router-dom';
+
 
 
 export default function CraftsShop() {
@@ -12,7 +11,7 @@ export default function CraftsShop() {
     }, []);
 
     const fetchCraft = () => {
-        fetch('https://fakestoreapi.com/products')
+        fetch('https://fakestoreapi.com/products?limit=18')
             .then(res=>res.json())
             .then(data=>setCraft(data))
             .catch(err => console.log(err))
