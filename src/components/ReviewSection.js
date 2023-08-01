@@ -1,5 +1,6 @@
 import React from 'react'
 import reviewPic from '../images/alex-starnes-WYE2UhXsU1Y-unsplash Small200px.png';
+import { Link } from 'react-router-dom';
 
 export default function ReviewSection() {
   return (
@@ -18,7 +19,7 @@ export default function ReviewSection() {
             </div>
             <h2 class="name">Amy Stevenson</h2>
             <p class="description"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, esse?</p>
-            <button class="btn">Shop Now</button>
+            <Link to="/candy"><button className="btn">Shop Now</button></Link>
             </div>
 
             <div class="review">
@@ -27,7 +28,7 @@ export default function ReviewSection() {
             </div>
             <h2 class="name">Amy Stevenson</h2>
             <p class="description"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, esse?</p>
-            <button class="btn">Shop Now</button>
+            <Link to="/candy"><button className="btn">Shop Now</button></Link>
             </div>
 
             <div class="review">
@@ -36,7 +37,7 @@ export default function ReviewSection() {
             </div>
             <h2 class="name">Amy Stevenson</h2>
             <p class="description"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, esse?</p>
-            <button class="btn">Shop Now</button>
+            <Link to="/candy"><button className="btn">Shop Now</button></Link>
             </div>
 
             <div class="review">
@@ -45,7 +46,7 @@ export default function ReviewSection() {
             </div>
             <h2 class="name">Amy Stevenson</h2>
             <p class="description"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, esse?</p>
-            <button class="btn">Shop Now</button>
+            <Link to="/candy"><button className="btn">Shop Now</button></Link>
             </div>
         
         </div>
