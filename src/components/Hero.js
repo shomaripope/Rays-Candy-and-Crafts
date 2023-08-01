@@ -1,6 +1,7 @@
 import React from 'react'
 import heroImage from '../images/candy800px.png';
 import { Link } from 'react-router-dom';
+import SingleProduct from './SingleProduct';
 
 export default function Hero() {
   return (

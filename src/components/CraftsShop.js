@@ -11,7 +11,7 @@ export default function CraftsShop() {
     }, []);
 
     const fetchCraft = () => {
-        fetch('https://fakestoreapi.com/products?limit=18')
+        fetch('https://fakestoreapi.com/products/category/jewelery?limit=18')
             .then(res=>res.json())
             .then(data=>setCraft(data))
             .catch(err => console.log(err))

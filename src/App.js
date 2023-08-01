@@ -1,18 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Header from './components/Header';
-// import Hero from './components/Hero';
-// import ReviewSection from './components/ReviewSection';
-// import FeatuedCandy from './components/FeatuedCandy';
-// import FeaturedCrafts from './components/FeaturedCrafts';
-// import Footer from './components/Footer';
-// import 'materialize-css/dist/css/materialize.min.css';
-
 import HomePage from './pages/HomePage';
 import CandyPage from './pages/CandyPage';
 import CraftsPage from './pages/CraftsPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import NoPage from './pages/NoPage';
+import SingleProductPage from "./pages/SingleProductPage";
 
 
 function App() {
@@ -26,15 +19,10 @@ function App() {
           <Route path="/crafts" element= {<CraftsPage />} />
           <Route path="/about" element= {<AboutPage />} />
           <Route path="/contact" element= {<ContactPage />} />
+          <Route path="/product/:id" element= {<SingleProductPage />} />
           <Route path="*" element= {<NoPage />} />
         </Routes>
       </BrowserRouter>
-      {/* <Header />
-      <Hero />
-      <ReviewSection />
-      <FeatuedCandy />
-      <FeaturedCrafts />
-      <Footer /> */}
 
     </div>
   );

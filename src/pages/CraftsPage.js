@@ -15,10 +15,6 @@ export default function CraftsPage() {
       </div>
       
       <CraftsShop />
-      <CraftsShop />
-      <CraftsShop />
-      <CraftsShop />
-      <CraftsShop />
       <Footer/>
     </div>
   )

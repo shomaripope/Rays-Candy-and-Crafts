@@ -16,13 +16,13 @@ export default function HamburgerNav() {
       </label>
     
       <nav class="menu1">
-        <ul>
-          <li><Link to="/" className="link1">Home</Link></li>
-          <li><Link to="/candy" className="link1">Products</Link></li>
-          <li><Link to="/about" className="link1">About Us</Link></li>
-          <li><Link to="/contact" className="link1">Contact</Link></li>
-          <li><ShoppingCart /></li>
-        </ul>
+            <ul>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/candy">Products</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
+              <i class="bi bi-cart"></i>
+            </ul>
       </nav>
   </nav>
   </section></div>

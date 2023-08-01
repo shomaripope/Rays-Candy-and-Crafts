@@ -39,9 +39,9 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
-    justify-items: right;
+    justify-items: center;
     list-style-type: none;
-    margin-right: 2em;
+    
     @media (max-width: 1200px) {
       display: grid;
       grid-template-columns: 1fr;
@@ -288,7 +288,7 @@ nav .menu1 {
       }
 }
 
-.candy img {
+.product-img {
     border-radius: 50px;
     margin-bottom: .5em;
     height: 250px;
@@ -310,9 +310,9 @@ nav .menu1 {
       }
 }
 
-.candy p {
+/* .product p {
   font-size: 1.5em;
-}
+} */
 
 .featured-candy .btn {
     background-color: #FF3EC9;
@@ -409,6 +409,12 @@ footer {
   grid-template-columns: .5fr 2fr;
   padding: 2em;
   margin-top: 5em;
+  @media (max-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    
+  }
 }
 
 footer ul {
@@ -416,6 +422,11 @@ footer ul {
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   list-style-type: none;
+  justify-items: center;
+  margin-right: 3em;
+  @media (max-width: 1200px) {
+    display: none;
+    }
 }
 
 footer ul li a {
@@ -424,7 +435,6 @@ footer ul li a {
   font-weight: bold;
   font-size: 2.5em; 
   text-decoration: none; 
-    
 }
 
 
@@ -549,6 +559,7 @@ footer ul li a {
     justify-items: start;
     justify-self: end;
     color: #FF3EC9;
+    text-decoration: inherit;
   }
 
   .candy-selector {
@@ -557,6 +568,8 @@ footer ul li a {
     justify-items: end;
     justify-self: end;
     color: #FF3EC9;
+    text-decoration: inherit;
+    
   }
 
   /* Candy Shop Page */
@@ -571,17 +584,24 @@ footer ul li a {
     @media (max-width: 1200px) {
       display: grid;
       grid-template-columns: 1fr;
+      gap: .5em;
       }
 }
 
 .product-card {
   box-shadow: 1px 1px 8px grey;
+  color:#FF3EC9;
   align-items: end;
   border-radius: 25px;
   display: grid;
   align-items: center;
   justify-items: center;
+  margin: 3em;
   padding: 1.3em;
+  @media (max-width: 1200px) {
+    height: auto;
+    margin-top: 4em;
+    }
 }
 
 .product-img {
@@ -598,7 +618,4 @@ margin: 1rem;
 
 .product-price {
   margin: 1rem;
-}
-.product-list .product-price {
-  
 }

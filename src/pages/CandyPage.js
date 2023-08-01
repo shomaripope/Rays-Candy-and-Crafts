@@ -16,10 +16,6 @@ export default function CandyPage() {
       </div>
 
       <CandyShop />
-      <CandyShop />
-      <CandyShop />
-      <CandyShop />
-      <CandyShop />
       <Footer/>
     </div>
   )
