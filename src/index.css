@@ -598,6 +598,7 @@ footer ul li a {
   justify-items: center;
   margin: 3em;
   padding: 1.3em;
+  min-height: 35rem;
   @media (max-width: 1200px) {
     height: auto;
     margin-top: 4em;
