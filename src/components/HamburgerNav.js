@@ -6,7 +6,8 @@ import ShoppingCart from './ShoppingCart';
 
 export default function HamburgerNav() {
   return (
-    <div><section class="p-menu1">
+    <div>
+      <section class="p-menu1">
     <nav id="navbar" class="navigation" role="navigation">
       <input id="toggle1" type="checkbox" />
       <label class="hamburger1" for="toggle1">

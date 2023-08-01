@@ -12,7 +12,7 @@ export default function Header() {
             <img className="logo" src={raysLogo} alt="Ray's Logo" />
           </Link>
         </div>
-        <ul>
+        <ul className='hamburger'>
           <HamburgerNav />
         </ul>
     </div>
