@@ -522,14 +522,13 @@ footer ul li a {
 .product-card {
   box-shadow: 1px 1px 8px grey;
   color:#FF3EC9;
-  align-items: end;
   border-radius: 25px;
   display: grid;
   align-items: center;
   justify-items: center;
   margin: 3em;
-  padding: 1.3em;
-  min-height: 35rem;
+  padding: 1.3rem;
+  min-height: 40rem;
   width: auto;
   @media (max-width: 1200px) {
     height: auto;
@@ -560,4 +559,30 @@ margin: 1rem;
 .product-description {
   margin-left: 4rem;
   margin-right: 4rem;
+}
+
+/* Cart Page */
+
+.cartPage-list  {
+  height: 100%;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 2rem;
+  color:#FF3EC9;
+  
+}
+
+.cartPage-list ul  {
+  list-style: none;
+ 
+}
+
+.cartPageTitle {
+  
+}
+
+/* Contact Page */
+
+.contactPage {
+  height: 100vh;
 }

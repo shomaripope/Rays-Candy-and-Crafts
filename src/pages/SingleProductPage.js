@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect, useState, useContext } from 'react';
+import { useParams, Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { shopContext } from '../context/shop-context';
+
 
 export default function SingleProductPage() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
+  const { addToCart } = useContext(shopContext);
 
   useEffect(() => {
     fetchProduct();
@@ -26,11 +29,12 @@ export default function SingleProductPage() {
     <div>
       <Header />
       <div className='product-card'>
-            <img className="product-img" src={product.image} alt={product.title} />
+          <img className="product-img" src={product.image} alt={product.title} />
           <h3 className='product-title'>{product.title}</h3>
           <h4 className='product-description'>{product.description}</h4>
           <h4 className='product-price'>Price: ${product.price}</h4>
-        </div>
+          <Link to="/cart"><button className='btn' onClick={() => addToCart(product)}>Add To Cart</button></Link>
+      </div>
         <Footer />
     </div>
   );

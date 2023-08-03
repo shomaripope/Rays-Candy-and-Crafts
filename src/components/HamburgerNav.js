@@ -22,7 +22,7 @@ export default function HamburgerNav() {
               <li><Link to="/candy">Products</Link></li>
               <li><Link to="/about">About</Link></li>
               <li><Link to="/contact">Contact</Link></li>
-              <i class="bi bi-cart"></i>
+              <Link to="/cart"><i class="bi bi-cart"></i></Link>
             </ul>
       </nav>
   </nav>

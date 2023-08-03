@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ContactForm() {
   return (
-    <div>
+    <div className='contactPage'>
         <form>
             <label>
                 Name:

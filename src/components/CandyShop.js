@@ -4,7 +4,8 @@ import Candy from './Candy';
 
 
 export default function CandyShop() {
-    const [candy, setCandy] = useState([])
+    const [candy, setCandy] = useState([]);
+    
 
     useEffect(() => {
         fetchCandy();
@@ -19,8 +20,9 @@ export default function CandyShop() {
 
   return (
     <div>
+        
         <Candy candy={candy} />
-
+      
     </div>
   )
 }
