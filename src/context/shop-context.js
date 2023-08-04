@@ -33,13 +33,13 @@ export const ShopContextProvider = (props) => {
     setCartItems((prev) => {
       const itemInCart = prev.find((item) => item.id === product.id);
       if (itemInCart) {
-        // If the item is already in the cart, increase its quantity by 1
         const updatedCart = prev.map((item) =>
           item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
         );
         return updatedCart;
+        
       } else {
-        // If the item is not in the cart, add it with a quantity of 1
+      
         return [...prev, { ...product, quantity: 1 }];
       }
     });
