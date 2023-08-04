@@ -569,7 +569,15 @@ margin: 1rem;
   margin-right: 4rem;
   margin-top: 2rem;
   color:#FF3EC9;
-  
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em; */
+  text-align: center;
+    @media (max-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+      }
 }
 
 .cartPage-list ul  {
@@ -577,9 +585,12 @@ margin: 1rem;
  
 }
 
-.cartPageTitle {
-  
+
+
+.cartItemList {
+  padding: 0;
 }
+
 
 /* Contact Page */
 
