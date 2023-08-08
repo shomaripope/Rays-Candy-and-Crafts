@@ -566,8 +566,15 @@ margin: 1rem;
 }
 
 /* Cart Page */
+/* .cart-page {
+  @media (max-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+      }
+} */
 
-.cartPageTitle {
+.cart-page-title {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -576,15 +583,12 @@ margin: 1rem;
   margin-top: 2rem;
 }
 
-.cartPage-list  {
+.cart-page-list  {
   height: 100%;
   margin-left: 4rem;
   margin-right: 4rem;
   margin-top: 2rem;
   color:#FF3EC9;
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3em; */
   text-align: center;
     @media (max-width: 1200px) {
     display: grid;
@@ -593,25 +597,87 @@ margin: 1rem;
       }
 }
 
-.cartPage-list ul  {
+.cart-page-list ul  {
   list-style: none;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.cart-page-list li  {
+  margin-top: 2rem;
  
 }
 
+.cart-product-card {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+  color:#FF3EC9;
+  
+}
+
+.cart-product-img {
+  height: 10rem;
+  width: 10rem;
+  @media (max-width: 1200px) {
+    margin-right: 2rem;
+      }
+}
+
+.product-price {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+  @media (max-width: 1200px) {
+    margin-right: 2rem;
+      }
+}
+
+.product-subtotal {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+  justify-items: end;
+  
+}
+
 .quantity-btn {
-  font-size: 1em;
+  font-size: 2em;
+  font-weight: bold;
   color:#FF3EC9;
   background-color:white;
 }
 
-.cartItemList {
-  padding: 0;
+.quantity {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  @media (max-width: 1200px) {
+    margin-right: 2rem;
+      }
 }
 
 .item-quantity {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   color:#FF3EC9;
+  justify-items: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.cart-calculations {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-items: end;
+  margin-right: 4rem;
+  color:#FF3EC9;
+  gap: 1em;
+  padding: 3em;
+  @media (max-width: 1200px) {
+    margin-right: 2rem;
+      }
 }
 
 /* Contact Page */
