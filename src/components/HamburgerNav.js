@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import 'material-icons';
-import ShoppingCart from './ShoppingCart';
+import ShoppingCartIcon from './ShoppingCart';
+
 
 
 export default function HamburgerNav() {
@@ -22,7 +23,7 @@ export default function HamburgerNav() {
               <li><Link to="/candy">Products</Link></li>
               <li><Link to="/about">About</Link></li>
               <li><Link to="/contact">Contact</Link></li>
-              <Link to="/cart"><i class="bi bi-cart"></i></Link>
+              <Link to="/cart"><ShoppingCartIcon /></Link>
             </ul>
       </nav>
   </nav>
