@@ -8,8 +8,14 @@ export default function CartPage() {
   const { cartItems, addToCart, removeFromCart } = useContext(shopContext);
 
   const calculateSubtotal = (item) => {
-    const subtotal = item.price * item.quantity;
+    const subtotal = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
     return subtotal.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+  };
+
+  const calculateTax = () => {
+    const subtotal = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+    const tax = subtotal * 0.1; // Example tax, as 10% of the subtotal
+    return tax.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
   };
 
   const calculateTotal = () => {
@@ -19,11 +25,14 @@ export default function CartPage() {
     return total.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
   };
 
+  const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
+  const itemsLabel = totalQuantity === 1 ? 'item' : 'items';
+
   return (
     <div>
       <Header />
       <div className='cart-page'>
-      <h1 className='cart-page-title'>Cart</h1>
+      <h1 className='cart-page-title'>({totalQuantity}) {itemsLabel} In Cart</h1>
 
       <div className='cart-page-list'>
         <ul className='cart-item-list'>
@@ -58,10 +67,11 @@ export default function CartPage() {
       </div>
 
       <div className='cart-calculations'>
-        <h5 className='cart-subtotal'>Total: {calculateSubtotal}</h5>
-        <h5 className='cart-tax'>Tax: {calculateTotal()}</h5>
+        <h5 className='cart-subtotal'>Shopping Cart Total: {calculateSubtotal}</h5>
+        <h5 className='cart-total'>Subtotal: {calculateSubtotal()}</h5>
+        <h5 className='cart-tax'>Tax: {calculateTax()}</h5>
         <h5 className='cart-total'>Total: {calculateTotal()}</h5>
-        <button>Checkout</button>
+        <button className='checkout-button'>Checkout</button>
       </div>
             
 
