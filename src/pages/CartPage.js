@@ -7,7 +7,12 @@ import { shopContext } from "../context/shop-context";
 export default function CartPage() {
   const { cartItems, addToCart, removeFromCart } = useContext(shopContext);
 
-  const calculateSubtotal = (item) => {
+  const calculateItemSubtotal = (item) => {
+    const subtotal = item.price * item.quantity;
+    return subtotal.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+  };
+
+  const calculateSubtotal = () => {
     const subtotal = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
     return subtotal.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
   };
@@ -57,7 +62,7 @@ export default function CartPage() {
 
                 <div className='product-subtotal'>
                 <h4>Subtotal: </h4>
-                <h4> {calculateSubtotal(item)}</h4>
+                <h4> {calculateItemSubtotal(item)}</h4>
                 </div>
 
               </div>
