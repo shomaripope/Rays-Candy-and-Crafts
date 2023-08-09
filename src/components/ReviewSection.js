@@ -19,7 +19,7 @@ export default function ReviewSection() {
             </div>
             <h2 class="name">Amy Stevenson</h2>
             <p class="description"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, esse?</p>
-            <Link to="/candy"><button className="btn">Shop Now</button></Link>
+            <Link to="/candy"><button className="shop-now-button">Shop Now</button></Link>
             </div>
 
             <div class="review">
@@ -28,7 +28,7 @@ export default function ReviewSection() {
             </div>
             <h2 class="name">Amy Stevenson</h2>
             <p class="description"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, esse?</p>
-            <Link to="/candy"><button className="btn">Shop Now</button></Link>
+            <Link to="/candy"><button className="shop-now-button">Shop Now</button></Link>
             </div>
 
             <div class="review">
@@ -37,7 +37,7 @@ export default function ReviewSection() {
             </div>
             <h2 class="name">Amy Stevenson</h2>
             <p class="description"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, esse?</p>
-            <Link to="/candy"><button className="btn">Shop Now</button></Link>
+            <Link to="/candy"><button className="shop-now-button" >Shop Now</button></Link>
             </div>
 
             <div class="review">
@@ -46,7 +46,7 @@ export default function ReviewSection() {
             </div>
             <h2 class="name">Amy Stevenson</h2>
             <p class="description"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, esse?</p>
-            <Link to="/candy"><button className="btn">Shop Now</button></Link>
+            <Link to="/candy"><button className="shop-now-button">Shop Now</button></Link>
             </div>
         
         </div>

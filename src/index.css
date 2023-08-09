@@ -647,7 +647,6 @@ margin: 1rem;
 .product-price {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  gap: 1em;
   @media (max-width: 1200px) {
     margin-right: 2rem;
       }
@@ -706,8 +705,25 @@ margin: 1rem;
 .checkout-button {
   padding: .5em;
   font-weight: bold;
-  color:#FF3EC9;
-  background-color:white;
+  color:white;
+  background-color:#FF3EC9;
+  border-radius: 15px;
+}
+
+.add-to-cart-button {
+  padding: .5em;
+  font-weight: bold;
+  color:white;
+  background-color:#FF3EC9;
+  border-radius: 15px;
+}
+
+.shop-now-button {
+  padding: .5em;
+  font-weight: bold;
+  color:white;
+  background-color:#FF3EC9;
+  border-radius: 15px;
 }
 
 /* Contact Page */

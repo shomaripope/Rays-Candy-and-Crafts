@@ -14,7 +14,7 @@ export default function Candy({ candy }) {
               <img className="product-img" src={product.image} alt={product.title} />
               <h3>{product.title}</h3>
               <p className='product-price'>Price: ${product.price}</p>
-              <Link to="/cart"><button className='btn' onClick={() => addToCart(product)}>Add To Cart</button></Link>
+              <Link to="/cart"><button className='add-to-cart-button' onClick={() => addToCart(product)}>Add To Cart</button></Link>
             </div>
           </Link>
         </div>

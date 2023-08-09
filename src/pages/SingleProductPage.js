@@ -33,7 +33,7 @@ export default function SingleProductPage() {
           <h3 className='product-title'>{product.title}</h3>
           <h4 className='product-description'>{product.description}</h4>
           <h4 className='product-price'>Price: ${product.price}</h4>
-          <Link to="/cart"><button className='btn' onClick={() => addToCart(product)}>Add To Cart</button></Link>
+          <Link to="/cart"><button className='add-to-cart-button' onClick={() => addToCart(product)}>Add To Cart</button></Link>
       </div>
         <Footer />
     </div>
