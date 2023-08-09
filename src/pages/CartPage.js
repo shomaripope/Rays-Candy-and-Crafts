@@ -26,7 +26,7 @@ export default function CartPage() {
   };
 
   const totalQuantity = cartItems.reduce((total, item) => total + item.quantity, 0);
-  const itemsLabel = totalQuantity === 1 ? 'item' : 'items';
+  const itemsLabel = totalQuantity === 1 ? 'Item' : 'Items';
 
   return (
     <div>
