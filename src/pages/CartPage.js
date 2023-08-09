@@ -14,13 +14,13 @@ export default function CartPage() {
 
   const calculateTax = () => {
     const subtotal = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
-    const tax = subtotal * 0.1; // Example tax, as 10% of the subtotal
+    const tax = subtotal * 0.06;
     return tax.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
   };
 
   const calculateTotal = () => {
     const subtotal = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
-    const tax = subtotal * 0.1; // Example tax, as 10% of the subtotal
+    const tax = subtotal * 0.06;
     const total = subtotal + tax;
     return total.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
   };
